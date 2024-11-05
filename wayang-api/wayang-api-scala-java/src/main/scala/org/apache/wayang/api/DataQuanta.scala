@@ -924,6 +924,9 @@ class DataQuanta[Out: ClassTag](val operator: ElementaryOperator, outputIndex: I
     this.planBuilder.buildAndExplain()
   }
 
+  def getPlanBuilder(): PlanBuilder = {
+    this.planBuilder
+  }
 
   /**
     * Write the data quanta in this instance to a text file. Triggers execution.
